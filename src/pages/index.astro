@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+import Skills from '../components/Skills.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import { personalInfo } from '../data/portfolio';
+---
+
+<Layout title={`${personalInfo.name} | Local SEO & Website Design Expert`} description={personalInfo.bio}>
+  <Header />
+  <main class="flex-grow">
+    <Hero />
+    <Services />
+    <About />
+    <Projects />
+    <Skills />
+    <Contact />
+  </main>
+  <Footer />
+</Layout>
